@@ -126,9 +126,9 @@ export const siteConfig = {
    * (ou trocar os nomes aqui). Enquanto não existirem, aparece um espaço reservado.
    */
   images: {
-    heroPortrait: "/images/erika-hero.jpg",
-    aboutPortrait: "/images/erika-sobre.jpg", // se não existir, usa a imagem do hero
-    bookCover: "/images/livro-capa.png",
+    heroPortrait: "/images/primeirafoto.webp",
+    aboutPortrait: "/images/segundafoto.webp",
+    bookCover: "/images/livro.webp",
     bookCoverAlt: "Capa do livro Cérebro, Comportamento e Emoção",
   },
 };

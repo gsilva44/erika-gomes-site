@@ -33,3 +33,11 @@ npm run build    # testa a versão de produção
 
 ## Editar depois de publicado
 Altere o arquivo no GitHub (ou localmente) e faça commit na branch `main`: a Vercel republica sozinha em cerca de 1 minuto. Para trocar imagens, substitua o arquivo em `public/images/` mantendo o mesmo nome.
+
+## Publicar no Cloudflare Workers (OpenNext)
+Em Workers Builds, use:
+- **Build command:** `npx opennextjs-cloudflare build`
+- **Deploy command:** `npx opennextjs-cloudflare deploy`
+
+O nome em `wrangler.jsonc` (`name` e `services[].service`) deve ser igual ao nome do Worker no painel da Cloudflare.
+Teste local: `npm run preview`.

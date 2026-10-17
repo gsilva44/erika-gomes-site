@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp"],
+    // Cloudflare Workers: serve os arquivos de /public diretamente (sem otimização em tempo real).
+    unoptimized: true,
   },
 };
 

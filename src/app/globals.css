@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Nomes das fontes usados pelo Tailwind (com alternativas de sistema em tailwind.config.ts) */
+:root {
+  --font-display: "Playfair Display";
+  --font-sans: "Montserrat";
+  --font-script: "Allura";
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;

@@ -3,6 +3,16 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossOrigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@100..900&family=Playfair+Display:wght@500;600;700&display=swap"
+  rel="stylesheet"
+/>
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: siteConfig.seo.title,
@@ -37,6 +47,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+<<<<<<< HEAD
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -46,6 +57,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@100..900&family=Playfair+Display:wght@500;600;700&display=swap"
           rel="stylesheet"
         />
+=======
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href={FONTS_URL} />
+>>>>>>> d8f3b83 (Atualiza fotos e configura site)
       </head>
       <body className="font-sans">{children}</body>
     </html>
