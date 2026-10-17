@@ -65,3 +65,8 @@ body {
   .enter, .reveal { animation: none !important; }
   * { transition-duration: 0.01ms !important; }
 }
+:root {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-script: "Allura", cursive;
+}
