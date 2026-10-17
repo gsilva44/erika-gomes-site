@@ -1,0 +1,8 @@
+Imagens atuais (recortadas da arte de referência, resolução limitada):
+
+erika-hero.jpg    Retrato principal (topo do site)
+erika-sobre.jpg   Retrato da seção "Sobre mim"
+livro-capa.png    Capa do livro
+
+Para ganhar nitidez, substitua pelos arquivos originais em alta resolução mantendo os mesmos nomes
+(ou ajuste os nomes em src/config/site.ts). Sugestão: retrato com no mínimo 1600 px de largura; capa com no mínimo 900 px de largura.

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: #fbf4ec;
+  color: #5b4439;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #e3cbb3;
+  color: #472014;
+}
+
+:focus-visible {
+  outline: 2px solid #b5663f;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Entrada do hero: uma única sequência ao carregar a página */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.enter {
+  animation: fade-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 90ms);
+}
+
+/* Revelação ao rolar: CSS puro, só em navegadores compatíveis */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+  }
+}
+
+/* Foto do hero esmaecendo em direção ao texto */
+.photo-fade {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 22%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 22%);
+}
+@media (min-width: 1024px) {
+  .photo-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 24%);
+    mask-image: linear-gradient(to right, transparent 0, #000 24%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .enter, .reveal { animation: none !important; }
+  * { transition-duration: 0.01ms !important; }
+}
