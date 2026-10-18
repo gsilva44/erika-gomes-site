@@ -21,9 +21,9 @@ export function Services() {
         </div>
 
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {services.items.map((item, index) => (
-            <li
-              key={item.title}
+          {services.items.filter((item) => item != null).map((item, index) => (
+         <li
+         key={item.title}
               className={
                 index === 4
                   ? "sm:col-span-2 sm:col-start-1 lg:col-span-2 lg:col-start-2"
