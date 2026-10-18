@@ -89,6 +89,13 @@ export const siteConfig = {
         description:
           "Escuta, orientação e parcerias para um ambiente mais saudável e acolhedor para aprender.",
       },
+       {
+        icon: "brain",
+        title: "Neurociência do Desenvolvimento e ABA",
+        description:
+          "Atualmente cursando Neurociência do Desenvolvimento e Análise do Comportamento Aplicada (ABA), ampliando conhecimentos sobre o desenvolvimento humano, a aprendizagem e o comportamento.",
+      },
+,
     ],
   },
 

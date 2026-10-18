@@ -5,6 +5,7 @@ import { Services } from "@/components/Services";
 import { Book } from "@/components/Book";
 import { ContactBanner } from "@/components/ContactBanner";
 import { Footer } from "@/components/Footer";
+import { Purpose } from "@/components/Purpose";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <main id="conteudo">
         <Hero />
         <About />
+        <Purpose />
         <Services />
         <Book />
         <ContactBanner />
